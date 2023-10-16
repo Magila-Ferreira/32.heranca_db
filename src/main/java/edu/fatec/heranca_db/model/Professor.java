@@ -6,16 +6,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tbl_prof")
+@Table(name = "tb_prof")
 public class Professor extends Pessoa {
     @Id
     @Column(name = "reg_prof")
     private int registro;
 
-    @Column(name="􀆟t_prof", nullable = false,length = 20)
+    @Column(name="tit_prof", nullable = false,length = 20)
     private String titulo;
     
-    @Column(name="area_􀆟t", nullable = false,length = 20)
+    @Column(name="area_tit", nullable = false,length = 20)
     private String area;
     
     public int getRegistro() {
